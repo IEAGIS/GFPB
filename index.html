@@ -530,8 +530,8 @@
 
 		var url = "http://argis.ualr-iea.org/arcgis/rest/services/Downtown_Pine_Bluff_Published/MapServer";
 		var map = L.map('map',{zoomControl: false}).setView([34.2231, -92.0032], 16),
-			layer = L.esri.basemapLayer('Streets').addTo(map),
-			layerLabels = L.esri.basemapLayer('DarkGrayLabels').addTo(map);
+			layer = L.esri.basemapLayer('Streets').addTo(map);//,
+			//layerLabels = L.esri.basemapLayer('DarkGrayLabels').addTo(map);
 			map.attributionControl.setPrefix("Developed by the UA Little Rock <a target='_new' href='http://ualr.edu/aedi'>Arkansas Economic Development Institute</a>");
 		var downtown = L.esri.dynamicMapLayer({
 			url: url,
